@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Deployment</title>
+</head>
+<body>
+    <h1>Stroke Predict</h1>
+    <p>enter your arg</p>
+    <form action="/", method="POST">
+        <input type="text", name="arg_1", placeholder="arg_1">
+        <input type="text", name="arg_2", placeholder="arg_2">
+        <input type="text", name="arg_3", placeholder="arg_3">
+        <input type="text", name="arg_4", placeholder="arg_4">
+        <input type="text", name="arg_5", placeholder="arg_5">
+        <input type="text", name="arg_6", placeholder="arg_6">
+        <input type="text", name="arg_7", placeholder="arg_7">
+        <input type="text", name="arg_8", placeholder="arg_8">
+        <input type="text", name="arg_9", placeholder="arg_9">
+        <input type="text", name="arg_10", placeholder="arg_10">
+        <input type="submit">
+    </form>
+
+    <div>
+        <p>Result</p>
+        {{predict}}
+    </div>
+
+    <button onclick="resetPage()">Reset Page</button>
+    <script>
+        function resetPage() {
+            // You can use window.location to navigate to the index page or any other page you want to reset to.
+            window.location.href = "/"; // Change "/" to the URL of your index page.
+        }
+    </script>
+</body>
+</html>
