@@ -1,6 +1,5 @@
 from flask import Flask , render_template, request,jsonify
 import json
-import ast
 from sklearn.preprocessing import MinMaxScaler
 import pandas as pd
 import model
@@ -8,7 +7,6 @@ import model
 app = Flask(__name__)
 #declared an empty variable for reassignment
 response = ''
-
 
 @app.route("/")
 def hello():
